@@ -40,7 +40,7 @@ end
 M.get_models = function()
   local cmd = {
     "curl", "-s", "-X", "GET",
-    Config.api_base.."models",
+    Config.api_base.."/models",
     "-H", "Content-Type: application/json",
   }
 
@@ -90,7 +90,7 @@ M.send_request = function(prompt, callback)
 
   local cmd = {
     "curl", "-s", "-X", "POST",
-    Config.api_base.."chat/completions",
+    Config.api_base.."/chat/completions",
     -- "https://api.siliconflow.cn/v1/chat/completions",
     -- "http://localhost:8200/v1/chat/completions",
     "-H", "Content-Type: application/json",

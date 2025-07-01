@@ -6,8 +6,9 @@
 
 local M = {}
 M.Config = {}
+M.Config.api_base = "htts://api.siliconflow.cn/v1/chat/completions"
+M.Config.model = "Qwen/Qwen2.5-7B-Instruct"
+M.Config.api_key = ""
 M.Config.src = "en"
 M.Config.tgt = "zh"
-M.Config.provider = "tencent"
-M.Config.token = ""
 return M
